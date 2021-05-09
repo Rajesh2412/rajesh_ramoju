@@ -1,0 +1,144 @@
+<main>
+  <div class="section-header section-image bg-primary pb-0">
+    <div class="container z-2">
+      <div class="row my-5 justify-content-center text-center">
+        <div class="col-lg-8">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/rajesh-portfolio-r2412.appspot.com/o/profile-1.jpg?alt=media&token=73e8155f-1afa-49ec-b30c-9771c0f0fd74"
+            class="rounded-circle img-thumbnail image-lg border-light shadow-inset p-3" alt="Joseph Avatar" />
+          <div class="mt-5 mb-3">
+            <h1 class="display-2 font-weight-normal my-4">
+              Hello, I’m
+              <span class="text-through font-weight-bold">RajEsh Ramoju</span>
+              Little Begetter.
+            </h1>
+            <h5 class="font-weight-normal text-gray">
+              Developer at
+              <span class="font-weight-bold text-dark">Huawei</span>
+            </h5>
+          </div>
+          <h2 class="h5 font-weight-normal text-gray mb-4">
+            <fa-icon class="mr-3" [icon]="faMap"></fa-icon>India
+          </h2>
+          <ul class="list-unstyled d-flex justify-content-center mt-3 mb-0">
+            <li>
+              <a href="" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook ml-2 mr-2">
+                <fa-icon [icon]="faFacebook"></fa-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter ml-2 mr-2">
+                <fa-icon [icon]="faInstagram"></fa-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/kanaka-rajesh-ramoju-16823b120/" target="_blank"
+                aria-label="slack social link" class="icon icon-xs icon-slack ml-2 mr-2">
+                <fa-icon [icon]="faLinkedIn"></fa-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" aria-label="dribbble social link"
+                class="icon icon-xs icon-dribbble ml-2 mr-2">
+                <fa-icon [icon]="faGithub"></fa-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <router-outlet></router-outlet>
+</main>
+
+<footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <p>
+          Also, you can interact with me in the below platform;
+          Just hit the icon, you will redirected to find my profiles.
+        </p>
+        <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+          <li class="mr-2">
+            <a href="https://www.linkedin.com/in/kanaka-rajesh-ramoju-16823b120/" target="_blank"
+              class="btn btn-icon-only btn-pill btn-primary" aria-label="twitter social link" data-toggle="tooltip"
+              data-placement="top" title="Follow @themesberg on Twitter">
+              <fa-icon class="icon-center" [icon]="faLinkedIn"></fa-icon>
+            </a>
+          </li>
+          <li class="mr-2">
+            <a href="https://www.facebook.com/rajesh.ramojo/" target="_blank"
+              class="btn btn-icon-only btn-pill btn-primary" aria-label="facebook social link" data-toggle="tooltip"
+              data-placement="top" title="Like @themesberg on Facebook">
+              <fa-icon class="icon-center" [icon]="faFacebook"></fa-icon>
+            </a>
+          </li>
+          <li class="mr-2">
+            <a href="https://github.com/Rajesh2412" target="_blank" class="btn btn-icon-only btn-pill btn-primary"
+              aria-label="github social link" data-toggle="tooltip" data-placement="top" title="Open source projects">
+              <fa-icon class="icon-center" [icon]="faGithub"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rajesh_ramoju/" target="_blank"
+              class="btn btn-icon-only btn-pill btn-primary" aria-label="dribbble social link" data-toggle="tooltip"
+              data-placement="top" title="Follow us on Dribbble">
+              <fa-icon class="icon-center" [icon]="faInstagram"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+        <h5>Documents</h5>
+        <ul class="footer-links list-unstyled mt-2">
+          <li class="mb-1" (click)="downloadPdf()">
+            <a class="p-2">Resume</a>
+          </li>
+          <li class="mb-1">
+            <a class="p-2" target="_blank" href="https://themesberg.com/products">Cover letter</a>
+          </li>
+          <li class="mb-1">
+            <a class="p-2" target="_blank" href="https://themesberg.com/about">Work Experience</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-5 mb-lg-0">
+        <h5>Other</h5>
+        <ul class="footer-links list-unstyled mt-2">
+          <li class="mb-1">
+            <a class="p-2" routerLink="articles"
+             >Articles
+              <span class="badge badge-gray ml-2">typing...</span></a>
+          </li>
+          <li class="mb-1">
+            <a class="p-2" routerLink="technologies"
+             >Tools/Technologies</a>
+          </li>
+          <!-- <li class="mb-1">
+            <a class="p-2" target="_blank" href="https://themesberg.com/licensing"></a>
+          </li>
+          <li>
+            <a class="p-2" target="_blank"
+              href="https://github.com/themesberg/pixel-bootstrap-ui-kit/issues"></a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <hr class="my-2" />
+    <div class="row">
+      <div class="col">
+        <div class="d-flex text-right justify-content-end align-items-end" role="contentinfo">
+          <p class="font-weight-normal font-small mb-0">
+            <img src="../../assets/rajesh ramoju.png" alt="signature" width="80%" />
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- <div class="alert alert-secondary shadow-soft" role="alert">
+  <span class="alert-inner--text"><strong>Oh great!</strong>You can s</span>
+</div> -->
